@@ -46,8 +46,8 @@ const Cat = () => {
             onChangeText={(text) => setPassword(text)}
             />
         </View>
-       
-        <TouchableOpacity style={styles.loginBtn} onPress={login_auth}>
+        
+        <TouchableOpacity style={styles.loginBtn} onPress={() => login_auth(password)}>
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
 
